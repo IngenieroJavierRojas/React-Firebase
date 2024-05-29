@@ -13,7 +13,7 @@ export const HomePage = () => {
     
     const { logoutFirebase } = useAuth();
     const { showContent } = useModalStore();
-    const { notes, createNote, updateNote, deleteNote } = useNotes();
+    const {  createNote  } = useNotes();
 
     return (
         <div className="imageBase bg-cover">
@@ -42,9 +42,6 @@ export const HomePage = () => {
                     </aside>
                     
                     <NotaInfo
-                        notes={notes}
-                        updateNote={updateNote}
-                        deleteNote={deleteNote}
                     />
                 </main>
             </div>

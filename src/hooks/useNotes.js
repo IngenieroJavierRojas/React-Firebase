@@ -24,7 +24,7 @@ export const useNotes = () => {
         unsubscribed && getNotes(sessionStorage.getItem("auth"));
 
         return () => (unsubscribed = false);
-    }, []);
+    }, [notes]);
 
     const getNotes = async (uid) => {
         const ref = query(

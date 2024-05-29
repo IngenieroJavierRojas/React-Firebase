@@ -3,9 +3,9 @@ import { Delete, Editar } from "../Icons";
 import { AcceptDelete, EditNotes } from "../../notes";
 import { useModalStore } from "../../store";
 
-export const NotaInfo = ({ notes, updateNote, deleteNote }) => {
+export const NotaInfo = () => {
 
-    // const { notes, updateNote, deleteNote } = useNotes();
+    const { notes, updateNote, deleteNote } = useNotes();
     const { showContent } = useModalStore();
 
     return (
